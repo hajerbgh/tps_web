@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet"/>
+        <!--icones font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>To Do List</title>
+    </head> 
+    <body>
+   <div class="app">
+        <h1>🌸 To-Do List 🌸</h1>
+
+        <div class="input-group">
+            <input id="nouvelle-tache" type="text" placeholder="✏️ Saisir une tâche..." aria-label="Nouvelle tâche">
+            <button id="btn-ajouter" type="button"><i class="fa fa-plus"></i> Ajouter</button>
+        </div>
+
+        <div class="controls">
+            <input id="recherche" placeholder="🔍 Rechercher..." aria-label="Recherche">
+            <button id="btn-supprimer-tout" type="button"><i class="fa fa-trash"></i> Tout supprimer</button>
+        </div>
+
+        <ul id="liste-taches"></ul>
+
+        <div class="compteurs">
+            <span id="en-cours"><i class="fa-solid fa-spinner"></i> En cours : 0</span> | 
+            <span id="terminees"><i class="fa-solid fa-check-circle"></i> Terminées : 0</span>
+        </div>
+   </div>
+   <script src="script.js" defer></script>
+</body>
+</html>

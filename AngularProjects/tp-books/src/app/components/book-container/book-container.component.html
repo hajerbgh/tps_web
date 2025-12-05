@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>TP Book Catalog</h1>
+
+  <section class="controls">
+    <input placeholder="Recherche titre ou auteur..." [(ngModel)]="search" />
+    <select [(ngModel)]="filterCategory">
+      <option value="">Toutes catégories</option>
+      <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+    </select>
+    <select [(ngModel)]="sortBy">
+      <option value="none">Tri: aucun</option>
+      <option value="category">Tri: catégorie</option>
+      <option value="availability">Tri: disponibilité</option>
+    </select>
+    <div class="counter">Total: {{ totalCount }}</div>
+  </section>
+
+  <section class="main-grid">
+    <app-book-form
+      [categories]="categories"
+      [editingBook]="editingBook"
+      (save)="onSave($event)"
+      (cancelEdit)="editingBook = null"
+    ></app-book-form>
+
+    <app-book-list
+      [books]="displayedBooks"
+      (edit)="onEditRequest($event)"
+      (delete)="onDeleteRequest($event)"
+    ></app-book-list>
+  </section>
+</div>

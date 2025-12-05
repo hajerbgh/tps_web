@@ -1,0 +1,8 @@
+p {
+  background-color: #eef3ff;
+  padding: 10px;
+  border-left: 4px solid #4b6cff;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: fit-content;
+}

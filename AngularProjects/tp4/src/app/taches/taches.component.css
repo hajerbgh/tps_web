@@ -1,0 +1,38 @@
+
+
+
+h2 {
+  margin-bottom: 15px;
+}
+
+
+li {
+  background: #f7f7f7;
+  padding: 12px;
+  /*border-radius: 10px;*/
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    width: 70%;         /* ← réduit la largeur */
+  max-width: 500px;   /* (optionnel) limite max */
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1976d2;
+}

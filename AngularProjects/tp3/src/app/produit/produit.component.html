@@ -1,0 +1,12 @@
+<div [ngClass]="{'en-stock': enStock, 'hors-stock': !enStock}"
+     [ngStyle]="{'opacity': enStock ? '1' : '0.5'}">
+  <img [src]="imageUrl" alt="Image produit" [ngStyle]="{'width.px': 400, 'height': 'auto'}">
+</div>
+
+<!-- Bouton corrigé pour @Output -->
+<button class="ajouter" (click)="ajouterProduit()">Ajouter au panier</button>
+<button class="toggle-stock" (click)="toggleStock()">
+  {{ enStock ? 'Marquer comme Hors Stock' : 'Marquer comme En Stock' }}
+</button>
+
+<p>Prix : {{ prix | currency:'EUR':'symbol':'1.2-2' }}</p>

@@ -1,0 +1,31 @@
+<div class="list-card">
+  <h2>Liste des livres ({{ books.length }})</h2>
+
+  <table *ngIf="books?.length; else empty">
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Catégorie</th>
+        <th>Disponible</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books; trackBy: trackById">
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.category }}</td>
+        <td>{{ book.isAvailable ? 'Oui' : 'Non' }}</td>
+        <td>
+          <button (click)="edit.emit(book)">Modifier</button>
+          <button (click)="delete.emit(book.id)">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #empty>
+    <p>Aucun livre à afficher.</p>
+  </ng-template>
+</div>

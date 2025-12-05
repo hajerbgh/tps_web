@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9ff;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #b5b5b5;
+  border-radius: 6px;
+}
+
+input:focus {
+  border-color: #4b6cff;
+  outline: none;
+  box-shadow: 0 0 3px rgba(71, 94, 255, 0.4);
+}
+
+p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}

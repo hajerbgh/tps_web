@@ -1,0 +1,14 @@
+<h2>📦 Liste des produits</h2>
+
+<ul>
+  <li *ngFor="let p of produits"
+      [ngStyle]="{
+        color: p.stock > 50 ? 'green' : p.stock >= 20 ? 'orange' : 'red'
+      }">
+
+    {{ p.nom }} — Stock : {{ p.stock }}
+
+    <button (click)="augmenterStock(p)">+</button>
+    <button (click)="diminuerStock(p)" [disabled]="p.stock === 0">-</button>
+  </li>
+</ul>

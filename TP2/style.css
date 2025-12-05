@@ -1,0 +1,125 @@
+* { box-sizing: border-box; }
+body {
+  font-family: "Comic Sans MS", "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e6f0ff, #fff0f5);
+  margin: 0;
+  padding: 20px;
+  color: #444;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 { 
+  margin: 0 0 18px 0; 
+  font-size: 1.8rem; 
+  color: #ff69b4;
+  text-shadow: 1px 1px 3px #ffd6eb;
+}
+
+.input-group { 
+  display: flex; 
+  gap: 8px; 
+  margin-bottom: 12px; 
+}
+
+input[type="text"], #recherche {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ffc0cb;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 8px #ffb6c1;
+}
+
+button {
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#btn-ajouter { background: #ff85c1; color: white; }
+#btn-supprimer-tout { background: #ff4d6d; color: white; }
+
+.controls { display:flex; gap:8px; align-items:center; margin-bottom:12px; }
+
+ul { list-style:none; padding: 0; margin: 0; }
+.tache {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 12px;
+  margin: 6px 0;
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255,182,193,0.3);
+}
+
+.texte-tache { 
+  flex:1; 
+  margin-right: 12px; 
+  word-break: break-word; 
+  font-size: 1rem;
+}
+
+.terminee .texte-tache { 
+  text-decoration: line-through; 
+  opacity: 0.6; 
+  color: #999;
+}
+
+.actions { display: flex; gap: 6px; }
+.btn { 
+  padding: 7px 10px; 
+  border-radius: 10px; 
+  font-size: 0.85rem; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.btn-terminer { 
+  background: #b19cd9; 
+  color: #fff; 
+}
+.btn-supprimer { 
+  background: #ff6f91; 
+  color: #fff; 
+}
+
+.vide { 
+  text-align:center; 
+  color:#777; 
+  padding: 14px; 
+  font-style: italic;
+}
+.vide::before {
+  content: "🌸 "; 
+}
+
+.compteurs { 
+  margin-top: 15px; 
+  color: #555; 
+  font-size: 1rem; 
+  font-weight: 600;
+}

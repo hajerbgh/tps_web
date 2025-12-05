@@ -1,0 +1,13 @@
+<h2>📰 Liste des articles</h2>
+
+<div>
+  <input placeholder="Titre" [(ngModel)]="newTitre">
+  <input placeholder="Contenu" [(ngModel)]="newContenu">
+  <button (click)="ajouterArticle()">Ajouter</button>
+</div>
+
+<div *ngFor="let article of articles" [ngClass]="article.importance">
+  <h3>{{ article.titre }}</h3>
+  <p>{{ article.contenu }}</p>
+</div>
+

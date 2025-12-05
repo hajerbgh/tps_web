@@ -1,0 +1,104 @@
+.card {
+  padding: 20px;
+  border-radius: 14px;
+  background: #f5f7ff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border: 1px solid #e0e3ff;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #6576d4;
+}
+
+.form-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #cfd1f2;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #9fa8f9;
+  box-shadow: 0 0 4px #d9dcff;
+  outline: none;
+}
+
+/* checkbox */
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Messages d'erreur */
+.err small {
+  color: #d9534f;
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Boutons */
+.actions button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* Submit */
+.actions button[type="submit"] {
+  background: #9fa8f9;
+  color: white;
+}
+
+.actions button[type="submit"]:hover {
+  background: #8d97f5;
+}
+
+/* Cancel */
+.actions button[type="button"] {
+  background: #ffd9e6;
+}
+
+.actions button[type="button"]:hover {
+  background: #ffc6dc;
+}
+
+/* Ligne interdite — NE PAS MODIFIER */
+.ng-invalid.ng-dirty {
+  border-left: 5px solid red;
+  padding-left: 6px;
+}

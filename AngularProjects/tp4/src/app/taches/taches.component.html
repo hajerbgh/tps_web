@@ -1,0 +1,22 @@
+<h2>📝 Liste des tâches</h2>
+<br>
+<ng-container *ngIf="taches.length > 0; else pasDeTaches">
+  <ul>
+    <li *ngFor="let t of taches"
+        [ngClass]="{complete: t.completee}"
+        [ngStyle]="{
+          color: t.priorite === 'haute' ? 'red' :
+                 t.priorite === 'moyenne' ? 'orange' : 'green'
+        }">
+      {{ t.description }}
+      <button (click)="toggleTache(t)">
+        {{ t.completee ? 'Annuler' : 'Compléter' }}
+      </button>
+    </li>
+  </ul>
+</ng-container>
+
+<ng-template #pasDeTaches>
+  <p>Vous n'avez pas de tâches en cours ✨</p>
+</ng-template>
+<button (click)="viderTaches()">Vider les tâches</button>

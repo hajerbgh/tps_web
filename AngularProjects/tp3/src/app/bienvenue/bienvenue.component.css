@@ -1,0 +1,11 @@
+h2 { 
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #5c4dff; 
+  background: linear-gradient(135deg, #f3e8ff, #e6f0ff);
+  padding: 16px 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}

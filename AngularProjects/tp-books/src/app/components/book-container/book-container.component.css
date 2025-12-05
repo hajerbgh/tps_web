@@ -1,0 +1,61 @@
+/* Container principal */
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fdfdff;
+}
+
+/* Titre */
+h1 {
+  font-size: 26px;
+  text-align: center;
+  color: #5c6bc0;
+  margin-bottom: 25px;
+}
+
+/* Zone des contrôles */
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #f3f4ff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #dce0ff;
+}
+
+/* Inputs et selects */
+.controls input,
+.controls select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.controls input:focus,
+.controls select:focus {
+  outline: none;
+  border-color: #b4bafc;
+  box-shadow: 0 0 4px #cdd1ff;
+}
+
+/* Compteur */
+.counter {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 14px;
+  color: #424874;
+}
+
+/* Grille principale */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
